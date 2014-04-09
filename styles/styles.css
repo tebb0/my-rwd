@@ -15,7 +15,7 @@ body {
  background-color: lightblue 
 }
 #page-wrapper {
-  background-color: white; width: 768px; margin: 0 auto;
+  background-color: white; width: 768px; margin: 0 auto; position: relative;
 }
 #content {
   background-color: #f7f2da;padding: 0 1em;
@@ -27,7 +27,15 @@ nav ul {
   padding: 3px 10px;list-style-type: none;
 }
 
-/* --- Nav Bar --- */
-nav ul li {
+/* --- Top-Right floated Nav Bar --- */
+nav {
+  float: right; position: absolute; top: 0; right: 0; width: 175px;
+}nav ul li {
   display: inline-block;
+}
+header {
+  float: left; width: 400px;
+}
+#content {
+  clear: both;
 }
